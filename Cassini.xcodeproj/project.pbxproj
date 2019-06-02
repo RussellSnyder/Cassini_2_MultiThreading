@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		5C26E66B22A4463700CDEA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C26E66A22A4463700CDEA1F /* AppDelegate.swift */; };
-		5C26E66D22A4463700CDEA1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C26E66C22A4463700CDEA1F /* ViewController.swift */; };
 		5C26E67022A4463700CDEA1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C26E66E22A4463700CDEA1F /* Main.storyboard */; };
 		5C26E67222A4463700CDEA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C26E67122A4463700CDEA1F /* Assets.xcassets */; };
 		5C26E67522A4463700CDEA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C26E67322A4463700CDEA1F /* LaunchScreen.storyboard */; };
+		5C26E67E22A446CE00CDEA1F /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C26E67D22A446CE00CDEA1F /* ImageViewController.swift */; };
+		5C26E68022A44A2C00CDEA1F /* DemoURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C26E67F22A44A2C00CDEA1F /* DemoURLs.swift */; };
+		5C26E68222A44A6800CDEA1F /* oval.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C26E68122A44A6800CDEA1F /* oval.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C26E66722A4463700CDEA1F /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C26E66A22A4463700CDEA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C26E66C22A4463700CDEA1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C26E66F22A4463700CDEA1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C26E67122A4463700CDEA1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C26E67422A4463700CDEA1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C26E67622A4463700CDEA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C26E67D22A446CE00CDEA1F /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		5C26E67F22A44A2C00CDEA1F /* DemoURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoURLs.swift; sourceTree = "<group>"; };
+		5C26E68122A44A6800CDEA1F /* oval.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oval.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		5C26E66922A4463700CDEA1F /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
-				5C26E66A22A4463700CDEA1F /* AppDelegate.swift */,
-				5C26E66C22A4463700CDEA1F /* ViewController.swift */,
+				5C26E67C22A4463F00CDEA1F /* SupportingFiles */,
 				5C26E66E22A4463700CDEA1F /* Main.storyboard */,
-				5C26E67122A4463700CDEA1F /* Assets.xcassets */,
-				5C26E67322A4463700CDEA1F /* LaunchScreen.storyboard */,
+				5C26E67D22A446CE00CDEA1F /* ImageViewController.swift */,
+				5C26E67F22A44A2C00CDEA1F /* DemoURLs.swift */,
 				5C26E67622A4463700CDEA1F /* Info.plist */,
 			);
 			path = Cassini;
+			sourceTree = "<group>";
+		};
+		5C26E67C22A4463F00CDEA1F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5C26E67322A4463700CDEA1F /* LaunchScreen.storyboard */,
+				5C26E66A22A4463700CDEA1F /* AppDelegate.swift */,
+				5C26E67122A4463700CDEA1F /* Assets.xcassets */,
+				5C26E68122A44A6800CDEA1F /* oval.jpg */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C26E67522A4463700CDEA1F /* LaunchScreen.storyboard in Resources */,
+				5C26E68222A44A6800CDEA1F /* oval.jpg in Resources */,
 				5C26E67222A4463700CDEA1F /* Assets.xcassets in Resources */,
 				5C26E67022A4463700CDEA1F /* Main.storyboard in Resources */,
 			);
@@ -135,8 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C26E66D22A4463700CDEA1F /* ViewController.swift in Sources */,
+				5C26E67E22A446CE00CDEA1F /* ImageViewController.swift in Sources */,
 				5C26E66B22A4463700CDEA1F /* AppDelegate.swift in Sources */,
+				5C26E68022A44A2C00CDEA1F /* DemoURLs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
